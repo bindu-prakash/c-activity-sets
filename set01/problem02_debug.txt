@@ -24,3 +24,43 @@ Breakpoint 1, main () at problem02.c:4
 Continuing.
 3[Inferior 1 (process 2280) exited normally]
 (gdb) q
+ gdb ./problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\Desktop\c_activity_sets\c-activity-sets\set01\problem02.exe...done.
+(gdb) b 5
+Breakpoint 1 at 0x40147e: file problem02.c, line 5.
+(gdb) b info
+Function "info" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) y     
+Breakpoint 2 (info) pending.
+(gdb) info b
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0x0040147e in main at problem02.c:5
+2       breakpoint     keep y   <PENDING>  info
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\Desktop\c_activity_sets\c-activity-sets\set01/./problem02.exe
+[New Thread 7700.0x18bc]
+[New Thread 7700.0x2d68]
+
+Breakpoint 1, main () at problem02.c:5
+5           sum=a+b;
+(gdb) n
+6           printf("%d",sum);
+(gdb) p sum
+$1 = 3
+(gdb) p a
+$2 = 1
+(gdb) n
+37          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 7700) exited normally]
+(gdb) q
