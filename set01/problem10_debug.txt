@@ -1,0 +1,28 @@
+gdb ./problem10.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01\problem10.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401471: file problem10.c, line 10.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem10.exe
+[New Thread 9960.0x2a48]
+[New Thread 9960.0x199c]
+
+Breakpoint 1, main () at problem10.c:10
+10          input_two_strings(string1,string2);
+(gdb) n
+enter the first string :3
+enter the second string :4
+11          result=stringcompare(string1,string2);
+(gdb) c
+Continuing.
+4 is the greatest is [Inferior 1 (process 9960) exited normally]
+(gdb) q
