@@ -1,0 +1,33 @@
+gdb ./problem08.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01\problem08.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401477: file problem08.c, line 9.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem08.exe
+[New Thread 4420.0x3908]
+[New Thread 4420.0x3e64]
+
+Breakpoint 1, 0x00401477 in main () at problem08.c:9
+9        {
+(gdb) n
+10          int n = input_array_size();
+(gdb) c
+Continuing.
+Enter the number of elements you want to add: 5
+Enter element 1: 4
+Enter element 2: 4
+Enter element 3: 4
+Enter element 4: 4
+Enter element 5: 4
+The sum of the following 5 numbers: 4, 4, 4, 4, 4 is 20
+[Inferior 1 (process 4420) exited normally]
+(gdb) q
