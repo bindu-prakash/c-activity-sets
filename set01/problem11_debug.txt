@@ -1,4 +1,4 @@
-gdb ./problem11.exe
+ gdb ./problem11.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -13,19 +13,26 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x40146e: file problem11.c, line 14.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem11.exe
-[New Thread 20328.0x2040]
-[New Thread 20328.0x4a00]
+[New Thread 22228.0x4d9c]
+[New Thread 22228.0x5c48]
 
 Breakpoint 1, main () at problem11.c:14
 14          a = input_complex();
 (gdb) n
 Enter the real and imaginary parts of a complex number: 2
-2
+
+3
 15          b = input_complex();
+(gdb) n
+Enter the real and imaginary parts of a complex number: 4
+5
+16          sum = add_complex(a, b);
+(gdb) n
+17          output(a, b, sum);
+(gdb) n
+The sum of (2.00 + 3.00i) and (4.00 + 5.00i) is (6.00 + 8.00i)
+18          return 0;
 (gdb) c
 Continuing.
-Enter the real and imaginary parts of a complex number: 4
-4
-The sum of (2.00 + 2.00i) and (4.00 + 4.00i) is (6.00 + 6.00i)
-[Inferior 1 (process 20328) exited normally]
+[Inferior 1 (process 22228) exited normally]
 (gdb) q
