@@ -1,5 +1,5 @@
-gdb ./problem04.exe                                                                           
-GNU gdb (GDB) 7.6.1                                                                                                                                             
+ gdb ./problem04.exe
+GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
@@ -13,16 +13,20 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x40146e: file problem04.c, line 10.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem04.exe
-[New Thread 1308.0x18b8]
-[New Thread 1308.0x48a0]
+[New Thread 7584.0x5388]
+[New Thread 7584.0x3858]
 
 Breakpoint 1, main () at problem04.c:10
 10          input(&a, &b);
 (gdb) n
-Enter the numbers:3
-4
+Enter the numbers:5
+7
 12          sum(a, b, &add);
+(gdb) n
+13          output(a, b, add);
+(gdb) n
+5+7=1214            return 0;
 (gdb) c
 Continuing.
-3+4=7[Inferior 1 (process 1308) exited normally]
+[Inferior 1 (process 7584) exited normally]
 (gdb) q
