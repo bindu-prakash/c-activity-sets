@@ -1,4 +1,4 @@
- gdb ./problem07.exe
+gdb ./problem07.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -13,16 +13,20 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x40146e: file problem07.c, line 9.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem07.exe
-[New Thread 18036.0x510]
-[New Thread 18036.0x30a0]
+[New Thread 25352.0x61c8]
+[New Thread 25352.0x3920]
 
 Breakpoint 1, main () at problem07.c:9
 9           int n = input_n();
 (gdb) n
-Enter a positive integer: 3
+Enter a positive integer: 4
 10          int sum = sum_n_nos(n);
+(gdb) n
+11          output(n, sum);
+(gdb) n
+The sum of all natural numbers until 4 is 10
+12          return 0;
 (gdb) c
 Continuing.
-The sum of all natural numbers until 3 is 6
-[Inferior 1 (process 18036) exited normally]
+[Inferior 1 (process 25352) exited normally]
 (gdb) q
