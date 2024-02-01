@@ -13,26 +13,32 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x401477: file problem12.c, line 16.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem12.exe
-[New Thread 21644.0x4368]
-[New Thread 21644.0x62d4]
+[New Thread 10496.0x5a70]
+[New Thread 10496.0x2570]
 
 Breakpoint 1, 0x00401477 in main () at problem12.c:16
 16      {
 (gdb) n
 19          n = get_n();
 (gdb) n
-Enter the number of complex numbers: 4
+Enter the number of complex numbers: 3
 20          Complex c[n];
 (gdb) n
 21          input_n_complex(n, c);
 (gdb) n
+Enter the real and imaginary parts of a complex number: 4
+4
 Enter the real and imaginary parts of a complex number: 5
-6
-Enter the real and imaginary parts of a complex number: 7
-8
-Enter the real and imaginary parts of a complex number: 5
-8
+5
 Enter the real and imaginary parts of a complex number: 6
-9
+7
 22          result = add_n_complex(n, c);
+(gdb) n
+23          output(n, c, result);
+(gdb) n
+The sum of (4.00 + 4.00i), (5.00 + 5.00i), (6.00 + 7.00i) is (15.00 + 16.00i)
+24          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 10496) exited normally]
 (gdb) q
