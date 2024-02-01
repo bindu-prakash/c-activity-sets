@@ -1,4 +1,4 @@
-gdb ./problem10.exe
+ gdb ./problem10.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -13,8 +13,8 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x401471: file problem10.c, line 10.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem10.exe
-[New Thread 9960.0x2a48]
-[New Thread 9960.0x199c]
+[New Thread 3688.0x6a44]
+[New Thread 3688.0x50ec]
 
 Breakpoint 1, main () at problem10.c:10
 10          input_two_strings(string1,string2);
@@ -22,7 +22,11 @@ Breakpoint 1, main () at problem10.c:10
 enter the first string :3
 enter the second string :4
 11          result=stringcompare(string1,string2);
+(gdb) n
+12          output(string1,string2,result);
+(gdb) n
+4 is the greatest is 13     return 0;
 (gdb) c
 Continuing.
-4 is the greatest is [Inferior 1 (process 9960) exited normally]
+[Inferior 1 (process 3688) exited normally]
 (gdb) q
