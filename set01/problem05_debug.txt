@@ -1,4 +1,4 @@
-gdb ./problem05.exe
+ gdb ./problem05.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -13,17 +13,25 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x4014f3: file problem05.c, line 29.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem05.exe
-[New Thread 19836.0x2268]
-[New Thread 19836.0x16f8]
+[New Thread 24508.0x4df4]
+[New Thread 24508.0x5888]
 
 Breakpoint 1, main () at problem05.c:29
 29          a=input();
 (gdb) n
 Enter the numbers:3
 30          b=input();
+(gdb) n
+Enter the numbers:4
+31          c=input();
+(gdb) n
+Enter the numbers:4
+32          int large=compare(a, b, c);
+(gdb) n
+33          output(a, b, c, large);
+(gdb) n
+The largest number of 3, 4, 4 is 434        return 0;
 (gdb) c
 Continuing.
-Enter the numbers:3
-Enter the numbers:4
-The largest number of 3, 3, 4 is 4[Inferior 1 (process 19836) exited normally]
+[Inferior 1 (process 24508) exited normally]
 (gdb) q
