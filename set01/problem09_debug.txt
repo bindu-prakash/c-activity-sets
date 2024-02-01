@@ -1,4 +1,4 @@
-gdb ./problem09.exe
+ gdb ./problem09.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -13,16 +13,20 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x40146e: file problem09.c, line 10.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set01/./problem09.exe
-[New Thread 7060.0x2020]
-[New Thread 7060.0x1c8c]
+[New Thread 25340.0x16a4]
+[New Thread 25340.0x60c4]
 
 Breakpoint 1, main () at problem09.c:10
 10          n = input();
 (gdb) n
 Enter a number: 3
 11          sqrroot = square_root(n);
+(gdb) n
+12          output(n, sqrroot);
+(gdb) n
+The square root of 3.00 is 1.732051
+13          return 0;
 (gdb) c
 Continuing.
-The square root of 3.00 is 1.732051
-[Inferior 1 (process 7060) exited normally]
+[Inferior 1 (process 25340) exited normally]
 (gdb) q
