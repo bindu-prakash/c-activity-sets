@@ -1,6 +1,6 @@
 #include <stdio.h>
 void input(float*base,float*height){
-    printtf("enter the base of the triangle:");
+    printf("enter the base of the triangle:");
     scanf("%f",base);
     printf("enter the height of the triangle:");
     scanf("%f",height);
