@@ -16,10 +16,11 @@ void output(int a,int b,int c,int isscalene){
         printf("the triangle with sides %d,%d and %d is scalene",a,b,c);
     }
     else{
-pritf ("the triangle with sides %d,%d and %d is scalene",a,b,c);
+printf ("the triangle with sides %d,%d and %d is scalene",a,b,c);
     }
 }
 int main(){
+    int a,b,c;
     printf("enter the length of the three sides of the triangle:\n");
     a=input_side();
     b=input_side();
