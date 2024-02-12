@@ -9,32 +9,16 @@ This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
 Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set02\problem02.exe...done.
-(gdb) b main
-Breakpoint 1 at 0x401514: file problem02.c, line 24.
-(gdb) r
+(gdb) r     
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set02/./problem02.exe
-[New Thread 748.0xeb8]
-[New Thread 748.0x4f64]
-
-Breakpoint 1, main () at problem02.c:24
-24          printf("enter the length of the three sides of the triangle:\n");
-(gdb) n
-enter the length of the three sides of the triangle:
-25          a=input_side();
-(gdb) n
-enter the length of a side:4
-26          b=input_side();
-(gdb) n
-enter the length of a side:4
-27          c=input_side();
-(gdb) n
-enter the length of a side:4
-28          int scalene =check_scalene(a,b,c);
-(gdb) n
-29          output(a,b,c,scalene);
-(gdb) n
-the triangle with sides 4,4 and 4 is scalene30      return 0;
-(gdb) c
-Continuing.
-[Inferior 1 (process 748) exited normally]
+[New Thread 10472.0x354c]
+[New Thread 10472.0x2594]
+Enter the length of a side: 3
+Enter the length of a side: 4
+Enter the length of a side: 5
+Side a: 3
+Side b: 4
+Side c: 5
+The triangle with sides 3, 4, and 5 is a scalene triangle.
+[Inferior 1 (process 10472) exited normally]
 (gdb) q
