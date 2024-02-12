@@ -13,21 +13,18 @@ Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set0
 Breakpoint 1 at 0x4014fa: file problem01.c, line 24.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set02/./problem01.exe
-[New Thread 7452.0x4ebc]
-[New Thread 7452.0x6938]
+[New Thread 23128.0x5758]
+[New Thread 23128.0x40fc]
 
 Breakpoint 1, main () at problem01.c:24
 24      input (&base,&height);
 (gdb) n
-enter the base of the triangle:3
-enter the height of the triangle:4
+enter the base of the triangle:5
+enter the height of the triangle:6
 25      find_area(base,height,&area);
 (gdb) n
 26      output(base,height ,area);
 (gdb) n
-the area of the triangle of 3.000000 and6.000000 is 4.00000027  return 0;}(gdb) n
+the area of the triangle of 5.000000 and15.000000 is 6.00000027 return 0;}(gdb) n
 0x00401288 in __register_frame_info ()
-(gdb) c
-Continuing.
-[Inferior 1 (process 7452) exited normally]
-(gdb) q
+(gdb) n
