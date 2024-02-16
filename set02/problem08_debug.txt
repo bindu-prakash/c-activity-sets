@@ -1,0 +1,60 @@
+ gdb ./problem08.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set02\problem08.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40172c: file problem08.c, line 61.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set02/./problem08.exe
+[New Thread 7760.0x4f20]
+[New Thread 7760.0x2fb8]
+
+Breakpoint 1, 0x0040172c in main () at problem08.c:61
+61      int main() {
+(gdb) n
+65          n = input_n();
+(gdb) n
+Enter the number of triangles: 4
+66          Triangle triangles[n];
+(gdb) n
+67          input_n_triangles(n, triangles);
+(gdb) n
+Enter the details of 4 triangles:
+Triangle 1:
+Enter the base of the triangle: 4
+Enter the altitude of the triangle: 5
+Triangle 2:
+Enter the base of the triangle: 5
+Enter the altitude of the triangle: 7
+Triangle 3:
+Enter the base of the triangle: 6
+Enter the altitude of the triangle: 8
+Triangle 4:
+Enter the base of the triangle: 5
+Enter the altitude of the triangle: 6
+68          find_n_areas(n, triangles);
+(gdb) n
+69          smallest = find_smallest_triangle(n, triangles);
+(gdb) n
+70          output(n, triangles, smallest);
+(gdb) n
+Details of all triangles:
+Triangle 1: Base=4.00, Altitude=5.00, Area=10.00
+Triangle 2: Base=5.00, Altitude=7.00, Area=17.50
+Triangle 3: Base=6.00, Altitude=8.00, Area=24.00
+Triangle 4: Base=5.00, Altitude=6.00, Area=15.00
+
+The triangle with the smallest area is:
+Base=4.00, Altitude=5.00, Area=10.00
+72          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 7760) exited normally]
+(gdb) q
