@@ -1,0 +1,37 @@
+ gdb ./problem01.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03\problem01.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem01.c, line 13.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03/./problem01.exe
+[New Thread 20476.0x5f14]
+[New Thread 20476.0x4b4]
+
+Breakpoint 1, main () at problem01.c:13
+13          input(&x1, &y1, &x2, &y2);
+(gdb) n
+Enter coordinates of first point (x1 y1): 4
+4
+Enter coordinates of second point (x2 y2): 5
+6
+16          float distance = find_distance(x1, y1, x2, y2);
+(gdb) n
+19          output(x1, y1, x2, y2, distance);
+(gdb) n
+Coordinates of first point: (4.00, 4.00)
+Coordinates of second point: (5.00, 6.00)
+Distance between the points: 2.24
+21          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 20476) exited normally]
+(gdb) q
