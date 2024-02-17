@@ -1,0 +1,40 @@
+gdb ./problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 12.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03/./problem02.exe
+[New Thread 27048.0x504c]
+[New Thread 27048.0x3650]
+
+Breakpoint 1, main () at problem02.c:12
+12          input_triangle(&x1, &y1, &x2, &y2, &x3, &y3);
+(gdb) n
+Enter coordinates of first point (x1 y1): 3
+6
+Enter coordinates of second point (x2 y2): 7
+8
+Enter coordinates of third point (x3 y3): 4
+8
+15          int result = is_triangle(x1, y1, x2, y2, x3, y3);
+(gdb) n
+18          output(x1, y1, x2, y2, x3, y3, result);
+(gdb) n
+Coordinates of first point: (3.00, 6.00)
+Coordinates of second point: (7.00, 8.00)
+Coordinates of third point: (4.00, 8.00)
+These points form a triangle.
+20          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 27048) exited normally]
+(gdb) q
