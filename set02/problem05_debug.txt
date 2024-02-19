@@ -1,0 +1,37 @@
+gdb ./problem05.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set02\problem05.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4014eb: file problem05.c, line 28.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set02/./problem05.exe
+[New Thread 6360.0x874]
+[New Thread 6360.0x6728]
+
+Breakpoint 1, main () at problem05.c:28
+28          num1 = input();
+(gdb) n
+Enter a number: 12
+29          num2 = input();
+(gdb) n
+Enter a number: 16
+30          gcd = find_gcd(num1, num2);
+(gdb) n
+31          output(num1, num2, gcd);
+(gdb) n
+GCD of 12 and 16 is 4
+33          return 0;
+(gdb) c
+Continuing.
+[New Thread 6360.0x21b0]
+[New Thread 6360.0x55f0]
+[Inferior 1 (process 6360) exited normally]
+(gdb) q
