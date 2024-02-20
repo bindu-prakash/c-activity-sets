@@ -1,0 +1,30 @@
+ gdb ./problem04.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03\problem04.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40150b: file problem04.c, line 32.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03/./problem04.exe
+[New Thread 26668.0x3fa4]
+[New Thread 26668.0x904]
+
+Breakpoint 1, main () at problem04.c:32
+32          n = input();
+(gdb) n
+Enter a number: 5
+34          int fibo = find_fibo(n);
+(gdb) n
+36          output(n, fibo);
+(gdb) n
+The 5th Fibonacci number is: 5
+37          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 26668) exited normally]
+(gdb) q
