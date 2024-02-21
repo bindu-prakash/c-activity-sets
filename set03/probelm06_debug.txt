@@ -1,0 +1,33 @@
+gdb ./problem06.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03\problem06.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40158b: file problem06.c, line 42.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03/./problem06.exe
+[New Thread 12108.0xe3c]
+[New Thread 12108.0x2aa4]
+
+Breakpoint 1, main () at problem06.c:42
+42          input_string(main_string, substring);
+(gdb) n
+Enter the main string: helloworldhello
+Enter the substring: world
+45          int index = sub_str_index(main_string, substring);
+(gdb) n
+48          output(main_string, substring, index);
+(gdb) n
+The substring 'world' is found in the main string 'helloworldhello' at index 5.
+50          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 12108) exited normally]
+(gdb) q
