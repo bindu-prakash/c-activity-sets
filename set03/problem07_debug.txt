@@ -1,0 +1,38 @@
+gdb ./problem07.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03\problem07.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4015b6: file problem07.c, line 44.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03/./problem07.exe
+[New Thread 22420.0x3e64]
+[New Thread 22420.0x3eac]
+
+Breakpoint 1, main () at problem07.c:44
+44          Line line = input_line();
+(gdb) n
+Enter coordinates for point 1:
+Enter x coordinate: 1 1
+Enter y coordinate: Enter coordinates for point 2:
+Enter x coordinate: 2
+Enter y coordinate: 2
+45          find_length(&line);
+(gdb) n
+46          output(line);
+(gdb) n
+Point 1: (1.00, 1.00)
+Point 2: (2.00, 2.00)
+Distance between the points: 1.41
+47          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 22420) exited normally]
+(gdb) q
