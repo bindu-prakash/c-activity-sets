@@ -1,0 +1,39 @@
+ gdb ./problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set04\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 8.
+(gdb) r
+Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set04/./problem02.exe
+[New Thread 15452.0x5044]
+[New Thread 15452.0xea8]
+
+Breakpoint 1, main () at problem02.c:8
+warning: Source file is more recent than executable.
+8
+(gdb) n
+9       int main() {
+(gdb) n
+14              scanf("%d %d", &fractions[i].num, &fractions[i].den);
+(gdb) n
+15          }
+(gdb) n
+17          Fraction smallest = find_smallest(fractions, 3);
+(gdb) n
+18
+(gdb) n
+21          return 0;
+(gdb) c
+Continuing.
+Sum: 29/21
+Product: 10/21
+[Inferior 1 (process 15452) exited normally]
+(gdb) q
