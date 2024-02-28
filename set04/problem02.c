@@ -4,22 +4,36 @@ typedef struct {
     int num, den;
 } Fraction;
 
+Fraction find_smallest(Fraction fractions[], int size);
+
 int main() {
-    Fraction f1 = {2, 3}; // Represents the fraction 2/3
-    Fraction f2 = {5, 7}; // Represents the fraction 5/7
-    
-    // Perform operations with fractions
-    Fraction sum, product;
-    
-    sum.num = f1.num * f2.den + f2.num * f1.den;
-    sum.den = f1.den * f2.den;
-    
-    product.num = f1.num * f2.num;
-    product.den = f1.den * f2.den;
-    
-    // Print the results
-    printf("Sum: %d/%d\n", sum.num, sum.den);
-    printf("Product: %d/%d\n", product.num, product.den);
-    
+    Fraction fractions[3];
+
+    printf("Enter three fractions (numerator denominator):\n");
+    for (int i = 0; i < 3; ++i) {
+        scanf("%d %d", &fractions[i].num, &fractions[i].den);
+    }
+
+    Fraction smallest = find_smallest(fractions, 3);
+
+    printf("The smallest fraction is: %d/%d\n", smallest.num, smallest.den);
+
     return 0;
+}
+
+Fraction find_smallest(Fraction fractions[], int size) {
+    Fraction smallest = fractions[0];
+
+    for (int i = 1; i < size; ++i) {
+        // Calculate the value of each fraction as a double
+        double value1 = (double)smallest.num / smallest.den;
+        double value2 = (double)fractions[i].num / fractions[i].den;
+
+        // Compare the values
+        if (value2 < value1) {
+            smallest = fractions[i];
+        }
+    }
+
+    return smallest;
 }
