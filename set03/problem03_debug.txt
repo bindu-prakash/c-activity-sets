@@ -1,4 +1,4 @@
- gdb ./problem03.exe
+  gdb ./problem03.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -8,19 +8,19 @@ and "show warranty" for details.
 This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03\problem03.exe...done.     
+Reading symbols from C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03\problem03.exe...done.
 (gdb) b main
-Breakpoint 1 at 0x40146e: file problem03.c, line 8.   
+Breakpoint 1 at 0x40146e: file problem03.c, line 8.
 (gdb) r
 Starting program: C:\Users\Bindu Prakash\c-activity-sets\c-activity-sets\set03/./problem03.exe
-[New Thread 27252.0x24c4]
-[New Thread 27252.0x4d80]
+[New Thread 8404.0x424c]
+[New Thread 8404.0x8bcc]
 
 Breakpoint 1, main () at problem03.c:8
 8           int number = input_number();
 (gdb) n
 Enter a number: 3
-9           int prime_result = is_prime(number);      
+9           int prime_result = is_prime(number);
 (gdb) n
 10          output(number, prime_result);
 (gdb) n
@@ -28,5 +28,5 @@ Enter a number: 3
 11          return 0;
 (gdb) c
 Continuing.
-[Inferior 1 (process 27252) exited normally]
+[Inferior 1 (process 8404) exited normally]
 (gdb) q
